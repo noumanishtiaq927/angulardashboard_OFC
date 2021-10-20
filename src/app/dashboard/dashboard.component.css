@@ -1,0 +1,7 @@
+.navs{
+  display: flex;
+}
+app-topnav{
+  flex:1
+}
+

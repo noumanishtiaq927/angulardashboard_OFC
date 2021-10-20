@@ -1,0 +1,70 @@
+<!-- <<mat-drawer-container class="example-container mat-elevation-z8" [hasBackdrop]="hasBackdrop.value">
+  <mat-drawer #drawer [mode]="mode.value">I'm a drawer</mat-drawer>
+  <mat-drawer-content>
+    <mat-form-field appearance="fill">
+      <mat-label>Sidenav mode</mat-label>
+      <mat-select #mode value="side">
+        <mat-option value="side">Side</mat-option>
+        <mat-option value="over">Over</mat-option>
+        <mat-option value="push">Push</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Has backdrop</mat-label>
+      <mat-select #hasBackdrop>
+        <mat-option>Unset</mat-option>
+        <mat-option [value]="true">True</mat-option>
+        <mat-option [value]="false">False</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button mat-raised-button (click)="drawer.toggle()">Toggle drawer</button>
+  </mat-drawer-content>
+</mat-drawer-container> -->
+<mat-drawer-container class="example-container">
+  <mat-drawer class="mat-elevation-z8" mode="side" opened>
+    <br/>
+    <br/>
+    <h4 class="firstline">{{ logo | uppercase}}</h4>
+    <img  class="user-avatar-sidenav" src="../../../../assets/pic.jpg" alt="userimage">
+    <div class="biodata-sidenav">
+    <p class="name-sidenav"> {{name}}</p>
+    <p class="designation-sidenav">{{designation}}</p>
+  </div>
+  <button class="home-button" mat-button color="primary">
+    <mat-icon class="home-button-icon" color="primary">home</mat-icon>
+   <span> Home </span>
+  </button>
+  <mat-expansion-panel  class="mat-elevation-z0">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+
+       <mat-icon class="">face</mat-icon>
+       Users
+      </mat-panel-title>
+      <mat-panel-description>
+
+
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+   <span> <mat-icon> add </mat-icon> </span>
+   <span>  <button>  All User </button> </span>
+
+    <!-- <div>
+    <button class="expansion-button" mat-button color="primary">
+      <mat-icon  color="primary">add</mat-icon>
+     <span> All User </span>
+    </button>
+  </div>
+  <div>
+    <button mat-button color="primary">
+      <mat-icon  color="primary">remove</mat-icon>
+     <span> Add User </span>
+    </button>
+  </div> -->
+  </mat-expansion-panel>
+  </mat-drawer>
+  <mat-drawer-content>
+    <app-topnav></app-topnav>
+  </mat-drawer-content>
+</mat-drawer-container>
