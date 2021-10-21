@@ -14,6 +14,7 @@ import { GraphcardserviceService } from './service/graphservices/graphcardservic
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 
 import { AdduserComponent } from './users/adduser/adduser.component'
+import { CrucnoService } from './service/crudapi/crucno.service';
 
 
 
@@ -41,7 +42,8 @@ import { AdduserComponent } from './users/adduser/adduser.component'
     MaterialModule
   ],
   providers:[
-    GraphcardserviceService
+    GraphcardserviceService,
+    CrucnoService
   ]
 })
 export class DashboardModule { }

@@ -25,27 +25,39 @@
   </ng-container>
 
     <!-- Position Column -->
-    <ng-container matColumnDef="position">
-      <mat-header-cell *matHeaderCellDef mat-sort-header> No. </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.position}} </mat-cell>
+    <ng-container matColumnDef="image">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Image </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.fields.image}} </mat-cell>
     </ng-container>
 
     <!-- Name Column -->
     <ng-container matColumnDef="name">
       <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+      <mat-cell *matCellDef="let element"> {{element.fields.firstName}}  {{element.fields.lastName}}</mat-cell>
     </ng-container>
 
     <!-- Weight Column -->
-    <ng-container matColumnDef="weight">
-      <mat-header-cell *matHeaderCellDef mat-sort-header> Weight </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.weight}} </mat-cell>
+    <ng-container matColumnDef="designation">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Designation </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.fields.designation}} </mat-cell>
     </ng-container>
 
     <!-- Symbol Column -->
-    <ng-container matColumnDef="symbol">
-      <mat-header-cell *matHeaderCellDef mat-sort-header> Symbol </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.symbol}} </mat-cell>
+    <ng-container matColumnDef="mobile">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Mobile </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.fields.mobile}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="email">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Email </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.fields.email}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="joiningdate">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Joining Date </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.fields.joiningDate}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="address">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Address </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.fields.address}} </mat-cell>
     </ng-container>
 
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
