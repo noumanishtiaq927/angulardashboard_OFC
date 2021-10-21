@@ -12,7 +12,8 @@ import { CardComponent } from './reusecomponents/card/card.component';
 import { GraphcardComponent } from './reusecomponents/graphcard/graphcard.component';
 import { GraphcardserviceService } from './service/graphservices/graphcardservice.service';
 import {HttpClient, HttpClientModule} from "@angular/common/http";
-import { AllusersComponent } from './users/allusers/allusers.component'
+
+import { AdduserComponent } from './users/adduser/adduser.component'
 
 
 
@@ -26,15 +27,17 @@ import { AllusersComponent } from './users/allusers/allusers.component'
     AlluserComponent,
     CardComponent,
     GraphcardComponent,
-    AllusersComponent
+
+    AdduserComponent
 
 
 
   ],
   imports: [
     CommonModule,
-    HttpClientModule,
+
     DashboardRoutingModule,
+    HttpClientModule,
     MaterialModule
   ],
   providers:[

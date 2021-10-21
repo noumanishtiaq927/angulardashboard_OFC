@@ -1,0 +1,26 @@
+.form-class-style{
+  display: flex
+}
+.form-display-flex-first-col{
+  display: flex;
+  flex-direction: column;
+  flex:0.4
+}
+.form-display-flex-second-col{
+  display: flex;
+  flex-direction: column;
+  flex:0.4
+}
+.form-display-flex-gap-col{
+  display: flex;
+
+  flex:0.1
+}
+.form-full-width-fields{
+  width:1000px;
+}
+.adduser-container{
+  width:78vw;
+
+  margin:10vh auto
+}
