@@ -1,0 +1,13 @@
+.home-card-one{
+  margin:2vh 0 0 1vw;
+display: grid;
+grid-template-columns:repeat(4, 1fr);
+
+}
+.chart-card-two{
+  margin:2vh 0 0 1vw;
+display: grid;
+grid-template-columns: 55vw;
+grid-auto-rows: 1000px;
+
+}

@@ -9,7 +9,7 @@
     <p class="name-sidenav"> {{name}}</p>
     <p class="designation-sidenav">{{designation}}</p>
   </div>
-  <button class="home-button" mat-button color="primary">
+  <button class="home-button" mat-button color="primary" routerLink="/dashboard/home">
     <mat-icon class="home-button-icon" color="primary">home</mat-icon>
    <span> Home </span>
   </button>
@@ -25,18 +25,25 @@
 
       </mat-panel-description>
     </mat-expansion-panel-header>
-<div>
-   <mat-icon class="expansion-icons"> add </mat-icon>
-  <button  class="expansion-button" mat-button>  All User </button>
-</div>
-<div>
-   <mat-icon> remove </mat-icon>
-    <button mat-button>  Add User </button>
-  </div>
+    <mat-list>
+
+      <mat-list-item  routerLink="/dashboard/alluser">
+        <mat-icon mat-list-icon>add</mat-icon>
+        <div mat-line>All Users</div>
+
+      </mat-list-item>
+
+      <mat-list-item  routerLink="/dashboard/adduser">
+        <mat-icon mat-list-icon>remove</mat-icon>
+        <div mat-line>Add User</div>
+
+      </mat-list-item>
+    </mat-list>
 
   </mat-expansion-panel>
   </mat-drawer>
   <mat-drawer-content>
     <app-topnav></app-topnav>
+    <router-outlet></router-outlet>
   </mat-drawer-content>
 </mat-drawer-container>
